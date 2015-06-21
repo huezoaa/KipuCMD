@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  payment_method: MyString
+  company: MyString
+  policy_no: MyString
+  group_id: MyString
+
+two:
+  payment_method: MyString
+  company: MyString
+  policy_no: MyString
+  group_id: MyString
