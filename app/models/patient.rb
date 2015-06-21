@@ -1,3 +1,4 @@
 class Patient < ActiveRecord::Base
-  has_many :address
+  has_many :addresses
+  has_many :insurances
 end

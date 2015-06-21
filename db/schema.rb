@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150621205237) do
+ActiveRecord::Schema.define(version: 20150621211331) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,7 +24,10 @@ ActiveRecord::Schema.define(version: 20150621205237) do
     t.string   "zipcode"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer  "patient_id"
   end
+
+  add_index "addresses", ["patient_id"], name: "index_addresses_on_patient_id", using: :btree
 
   create_table "insurances", force: :cascade do |t|
     t.string   "payment_method"
@@ -33,7 +36,10 @@ ActiveRecord::Schema.define(version: 20150621205237) do
     t.string   "group_id"
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
+    t.integer  "patient_id"
   end
+
+  add_index "insurances", ["patient_id"], name: "index_insurances_on_patient_id", using: :btree
 
   create_table "patients", force: :cascade do |t|
     t.string   "kipu_account_number"
@@ -55,4 +61,6 @@ ActiveRecord::Schema.define(version: 20150621205237) do
     t.datetime "updated_at",          null: false
   end
 
+  add_foreign_key "addresses", "patients"
+  add_foreign_key "insurances", "patients"
 end
