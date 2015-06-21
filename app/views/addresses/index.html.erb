@@ -18,6 +18,7 @@
   <tbody>
     <% @addresses.each do |address| %>
       <tr>
+        <td><%= address.patient_id %></td>
         <td><%= address.street_1 %></td>
         <td><%= address.street_2 %></td>
         <td><%= address.city %></td>

@@ -5,6 +5,7 @@
 <table>
   <thead>
     <tr>
+      <th>Patient_ID</th>
       <th>Payment method</th>
       <th>Company</th>
       <th>Policy no</th>
@@ -16,6 +17,7 @@
   <tbody>
     <% @insurances.each do |insurance| %>
       <tr>
+        <td><%= insurance.patient_id %></td>
         <td><%= insurance.payment_method %></td>
         <td><%= insurance.company %></td>
         <td><%= insurance.policy_no %></td>

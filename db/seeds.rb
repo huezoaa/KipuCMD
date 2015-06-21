@@ -60,3 +60,36 @@ address01 = Address.create(street_1: "111 Main Street",
                            state: "Florida",
                            zipcode: "33999",
                            patient_id: "1")
+
+address02 = Address.create(street_1: "234 Oak Ave",
+                           street_2: "Apt 202",
+                           city: "Smalltown",
+                           state: "Florida",
+                           zipcode: "44775",
+                           patient_id: "2")
+
+address03 = Address.create(street_1: "567 Poplar Street",
+                           street_2: "Apt 201",
+                           city: "LargeTown",
+                           state: "Florida",
+                           zipcode: "33999",
+                           patient_id: "3")
+
+insurance01 = Insurance.create(payment_method: "Insurance",
+                               company: "Blue Cross Blue Shield",
+                               policy_no: "112233-7766",
+                               group_id: "401",
+                               patient_id: "1")
+
+insurance02 = Insurance.create(payment_method: "Insurance",
+                               company: "Blue Cross Blue Shield",
+                               policy_no: "44556-8899",
+                               group_id: "301",
+                               patient_id: "2")
+
+insurance03 = Insurance.create(payment_method: "Insurance",
+                               company: "GEICO",
+                               policy_no: "44556-2233",
+                               group_id: "201",
+                               patient_id: "3")
+
