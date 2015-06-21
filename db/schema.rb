@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 20150621201629) do
     t.string   "middle_initial"
     t.string   "gender"
     t.string   "marital_status"
-    t.string   "diagnoses_codes"
+    t.string   "diagnosis_codes"
     t.string   "race"
     t.string   "ethnicity"
     t.string   "ssn"

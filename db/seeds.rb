@@ -7,7 +7,7 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 patient01 = Patient.create(kipu_account_number: "100011001",
-                           admisssion_date: "20150615071514",
+                           admission_date: "20150615071514",
                            first_name: "Abraham",
                            last_name: "Lincoln",
                            middle_initial: "H",

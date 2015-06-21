@@ -8,7 +8,7 @@ one:
   middle_initial: MyString
   gender: MyString
   marital_status: MyString
-  diagnoses_codes: MyString
+  diagnosis_codes: MyString
   race: MyString
   ethnicity: MyString
   ssn: MyString
@@ -25,7 +25,7 @@ two:
   middle_initial: MyString
   gender: MyString
   marital_status: MyString
-  diagnoses_codes: MyString
+  diagnosis_codes: MyString
   race: MyString
   ethnicity: MyString
   ssn: MyString
