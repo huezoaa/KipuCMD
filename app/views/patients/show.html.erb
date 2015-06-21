@@ -1,0 +1,79 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Kipu account number:</strong>
+  <%= @patient.kipu_account_number %>
+</p>
+
+<p>
+  <strong>Admission date:</strong>
+  <%= @patient.admission_date %>
+</p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @patient.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @patient.last_name %>
+</p>
+
+<p>
+  <strong>Middle initial:</strong>
+  <%= @patient.middle_initial %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @patient.gender %>
+</p>
+
+<p>
+  <strong>Marital status:</strong>
+  <%= @patient.marital_status %>
+</p>
+
+<p>
+  <strong>Diagnoses codes:</strong>
+  <%= @patient.diagnoses_codes %>
+</p>
+
+<p>
+  <strong>Race:</strong>
+  <%= @patient.race %>
+</p>
+
+<p>
+  <strong>Ethnicity:</strong>
+  <%= @patient.ethnicity %>
+</p>
+
+<p>
+  <strong>Ssn:</strong>
+  <%= @patient.ssn %>
+</p>
+
+<p>
+  <strong>Dob:</strong>
+  <%= @patient.dob %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @patient.phone %>
+</p>
+
+<p>
+  <strong>Alt phone:</strong>
+  <%= @patient.alt_phone %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @patient.email %>
+</p>
+
+<%= link_to 'Edit', edit_patient_path(@patient) %> |
+<%= link_to 'Back', patients_path %>
