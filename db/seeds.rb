@@ -53,3 +53,9 @@ patient02 = Patient.create(kipu_account_number: "100011003",
                            phone: "3056667766",
                            alt_phone: "9546667778",
                            email: "ghengis@khan.mon")
+
+address01 = Address.create(street_1: "111 Main Street",
+                           street_2: "Apt 101",
+                           city: "Anytown"
+                           state: "Florida",
+                           zipcode: "33999")
