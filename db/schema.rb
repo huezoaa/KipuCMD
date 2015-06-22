@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150622153110) do
+ActiveRecord::Schema.define(version: 20150622153535) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -77,8 +77,12 @@ ActiveRecord::Schema.define(version: 20150622153110) do
     t.string   "home_phone"
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
+    t.integer  "insurance_id"
   end
+
+  add_index "subscribers", ["insurance_id"], name: "index_subscribers_on_insurance_id", using: :btree
 
   add_foreign_key "addresses", "patients"
   add_foreign_key "insurances", "patients"
+  add_foreign_key "subscribers", "insurances"
 end
