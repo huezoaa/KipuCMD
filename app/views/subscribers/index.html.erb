@@ -5,6 +5,7 @@
 <table>
   <thead>
     <tr>
+      <th>Insurance ID</th>
       <th>Relationship</th>
       <th>First name</th>
       <th>Last name</th>
@@ -25,6 +26,7 @@
   <tbody>
     <% @subscribers.each do |subscriber| %>
       <tr>
+        <td><%= subscriber.insurance_id %></td>
         <td><%= subscriber.relationship %></td>
         <td><%= subscriber.first_name %></td>
         <td><%= subscriber.last_name %></td>
