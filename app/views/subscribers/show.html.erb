@@ -1,0 +1,69 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Relationship:</strong>
+  <%= @subscriber.relationship %>
+</p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @subscriber.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @subscriber.last_name %>
+</p>
+
+<p>
+  <strong>Middle initial:</strong>
+  <%= @subscriber.middle_initial %>
+</p>
+
+<p>
+  <strong>Dob:</strong>
+  <%= @subscriber.dob %>
+</p>
+
+<p>
+  <strong>Address 1:</strong>
+  <%= @subscriber.address_1 %>
+</p>
+
+<p>
+  <strong>Address 2:</strong>
+  <%= @subscriber.address_2 %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @subscriber.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @subscriber.state %>
+</p>
+
+<p>
+  <strong>Zipcode:</strong>
+  <%= @subscriber.zipcode %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @subscriber.gender %>
+</p>
+
+<p>
+  <strong>Ssn:</strong>
+  <%= @subscriber.ssn %>
+</p>
+
+<p>
+  <strong>Home phone:</strong>
+  <%= @subscriber.home_phone %>
+</p>
+
+<%= link_to 'Edit', edit_subscriber_path(@subscriber) %> |
+<%= link_to 'Back', subscribers_path %>

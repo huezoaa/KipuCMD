@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Subscribers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Relationship</th>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Middle initial</th>
+      <th>Dob</th>
+      <th>Address 1</th>
+      <th>Address 2</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Zipcode</th>
+      <th>Gender</th>
+      <th>Ssn</th>
+      <th>Home phone</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @subscribers.each do |subscriber| %>
+      <tr>
+        <td><%= subscriber.relationship %></td>
+        <td><%= subscriber.first_name %></td>
+        <td><%= subscriber.last_name %></td>
+        <td><%= subscriber.middle_initial %></td>
+        <td><%= subscriber.dob %></td>
+        <td><%= subscriber.address_1 %></td>
+        <td><%= subscriber.address_2 %></td>
+        <td><%= subscriber.city %></td>
+        <td><%= subscriber.state %></td>
+        <td><%= subscriber.zipcode %></td>
+        <td><%= subscriber.gender %></td>
+        <td><%= subscriber.ssn %></td>
+        <td><%= subscriber.home_phone %></td>
+        <td><%= link_to 'Show', subscriber %></td>
+        <td><%= link_to 'Edit', edit_subscriber_path(subscriber) %></td>
+        <td><%= link_to 'Destroy', subscriber, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Subscriber', new_subscriber_path %>
